@@ -4,7 +4,7 @@ from errors import *
 from normalizer import *
 from api_clients.rise import fetch_rise
 from api_clients.arbeit_now import fetch_arbeit_now
-from database.db import init_db, add_details, get_connection
+from database.db import init_db, add_details, get_connection, is_db_empty
 from notifiers.telegram import telegram_notify
 from notifiers.discord import discord_notify
 from notifiers.slack import slack_notify
@@ -45,11 +45,11 @@ def build_message(job):
     Apply: {job['url']}
     """
 
-first_run = True
 
 def run_pipeline(conn):
-    global first_run
 
+    db_empty = is_db_empty(conn)
+    
     rise_jobs = fetch_rise()
     arbeit_jobs = fetch_arbeit_now()
 
@@ -61,19 +61,21 @@ def run_pipeline(conn):
 
         is_new = add_details(conn, job)
 
-        if is_new:
-            new_jobs.append(job)
+        if not is_new:
+            continue
+
+        new_jobs.append(job)
 
     conn.commit()
 
-    for job in new_jobs:
-        message = build_message(job)
+    if not db_empty:
+        for job in new_jobs:
+            message = build_message(job)
 
-        telegram_notify(message)
-        slack_notify(message)
-        discord_notify(message)
+            telegram_notify(message)
+            slack_notify(message)
+            discord_notify(message)
 
-    first_run = False
 
 def main():
     setup_logging()

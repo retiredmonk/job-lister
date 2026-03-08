@@ -58,3 +58,14 @@ def add_details(connection, job):
     cursor.close()
 
     return result is not None
+
+def is_db_empty(connection):
+    cursor = connection.cursor()
+
+    cursor.execute("SELECT COUNT(*) FROM job_list")
+
+    count = cursor.fetchone()[0]
+
+    cursor.close()
+
+    return count == 0
