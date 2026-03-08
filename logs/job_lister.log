@@ -1,0 +1,241 @@
+2026-03-08 18:25:27,703 - root - INFO - Successfully retrieved data
+2026-03-08 18:25:28,659 - root - INFO - Data Retrieved successfully
+2026-03-08 18:25:28,661 - root - ERROR - Unexpected crash: 'str' object has no attribute 'get'
+Traceback (most recent call last):
+  File "C:\Users\tarun\documents\job-lister\main.py", line 46, in main
+    normalized_jobs = normalize_all_jobs(rise_jobs, arbeit_jobs)
+  File "C:\Users\tarun\documents\job-lister\normalizer.py", line 41, in normalize_all_jobs
+    normalized_jobs.extend(normalize_rise_jobs(rise_jobs))
+                           ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^
+  File "C:\Users\tarun\documents\job-lister\normalizer.py", line 8, in normalize_rise_jobs
+    "title": job.get('title'),
+             ^^^^^^^
+AttributeError: 'str' object has no attribute 'get'
+2026-03-08 18:25:28,667 - root - INFO - Sleeping for 36000.0 seconds...
+
+2026-03-08 18:37:08,844 - root - INFO - Successfully retrieved data
+2026-03-08 18:37:10,261 - root - INFO - Data Retrieved successfully
+2026-03-08 18:37:10,263 - root - ERROR - Unexpected crash: 'str' object has no attribute 'get'
+Traceback (most recent call last):
+  File "C:\Users\tarun\documents\job-lister\main.py", line 60, in main
+    normalized_jobs = normalize_all_jobs(rise_jobs, arbeit_jobs)
+  File "C:\Users\tarun\documents\job-lister\normalizer.py", line 41, in normalize_all_jobs
+    normalized_jobs.extend(normalize_rise_jobs(rise_jobs))
+                           ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^
+  File "C:\Users\tarun\documents\job-lister\normalizer.py", line 8, in normalize_rise_jobs
+    "title": job.get('title'),
+             ^^^^^^^
+AttributeError: 'str' object has no attribute 'get'
+2026-03-08 18:37:10,265 - root - INFO - Sleeping for 36000.0 seconds...
+
+2026-03-08 18:46:06,740 - root - INFO - Successfully retrieved data
+2026-03-08 18:46:08,068 - root - INFO - Data Retrieved successfully
+2026-03-08 18:46:08,071 - root - ERROR - Unexpected crash: 'str' object has no attribute 'get'
+Traceback (most recent call last):
+  File "C:\Users\tarun\documents\job-lister\main.py", line 60, in main
+    normalized_jobs = normalize_all_jobs(rise_jobs, arbeit_jobs)
+  File "C:\Users\tarun\documents\job-lister\normalizer.py", line 42, in normalize_all_jobs
+    normalized_jobs.extend(normalize_arbeit_jobs(arbeit_jobs))
+                           ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "C:\Users\tarun\documents\job-lister\normalizer.py", line 25, in normalize_arbeit_jobs
+    "title": job.get('title'),
+             ^^^^^^^
+AttributeError: 'str' object has no attribute 'get'
+2026-03-08 18:46:08,073 - root - INFO - Sleeping for 36000.0 seconds...
+
+2026-03-08 18:47:24,490 - root - INFO - Successfully retrieved data
+2026-03-08 18:47:26,016 - root - INFO - Data Retrieved successfully
+2026-03-08 18:47:26,018 - root - ERROR - Unexpected crash: 'str' object has no attribute 'get'
+Traceback (most recent call last):
+  File "C:\Users\tarun\documents\job-lister\main.py", line 60, in main
+    normalized_jobs = normalize_all_jobs(rise_jobs, arbeit_jobs)
+  File "C:\Users\tarun\documents\job-lister\normalizer.py", line 42, in normalize_all_jobs
+    normalized_jobs.extend(normalize_arbeit_jobs(arbeit_jobs))
+                           ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "C:\Users\tarun\documents\job-lister\normalizer.py", line 25, in normalize_arbeit_jobs
+    "title": job.get('title'),
+             ^^^^^^^
+AttributeError: 'str' object has no attribute 'get'
+2026-03-08 18:47:26,020 - root - INFO - Sleeping for 36000.0 seconds...
+
+2026-03-08 18:51:28,084 - root - INFO - Successfully retrieved data
+2026-03-08 18:51:29,262 - root - INFO - Data Retrieved successfully
+2026-03-08 18:51:29,264 - root - ERROR - Unexpected crash: 'str' object has no attribute 'get'
+Traceback (most recent call last):
+  File "C:\Users\tarun\documents\job-lister\main.py", line 60, in main
+    normalized_jobs = normalize_all_jobs(rise_jobs, arbeit_jobs)
+  File "C:\Users\tarun\documents\job-lister\normalizer.py", line 42, in normalize_all_jobs
+    normalized_jobs.extend(normalize_arbeit_jobs(arbeit_jobs))
+                           ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "C:\Users\tarun\documents\job-lister\normalizer.py", line 25, in normalize_arbeit_jobs
+    "title": job.get('title'),
+             ^^^^^^^
+AttributeError: 'str' object has no attribute 'get'
+2026-03-08 18:51:29,267 - root - INFO - Sleeping for 36000.0 seconds...
+
+2026-03-08 18:52:04,502 - root - INFO - Successfully retrieved data
+2026-03-08 18:52:05,949 - root - INFO - Data Retrieved successfully
+2026-03-08 18:52:05,951 - root - ERROR - Unexpected crash: 'str' object has no attribute 'get'
+Traceback (most recent call last):
+  File "C:\Users\tarun\documents\job-lister\main.py", line 60, in main
+    normalized_jobs = normalize_all_jobs(rise_jobs, arbeit_jobs)
+  File "C:\Users\tarun\documents\job-lister\normalizer.py", line 42, in normalize_all_jobs
+    normalized_jobs.extend(normalize_arbeit_jobs(arbeit_jobs))
+                           ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "C:\Users\tarun\documents\job-lister\normalizer.py", line 25, in normalize_arbeit_jobs
+    "title": job.get('title'),
+             ^^^^^^^
+AttributeError: 'str' object has no attribute 'get'
+2026-03-08 18:52:05,953 - root - INFO - Sleeping for 36000.0 seconds...
+
+2026-03-08 18:56:58,737 - root - INFO - Successfully retrieved data
+2026-03-08 18:57:00,037 - root - INFO - Data Retrieved successfully
+2026-03-08 18:57:00,039 - root - ERROR - Unexpected crash: 'str' object has no attribute 'get'
+Traceback (most recent call last):
+  File "C:\Users\tarun\documents\job-lister\main.py", line 60, in main
+    normalized_jobs = normalize_all_jobs(rise_jobs, arbeit_jobs)
+  File "C:\Users\tarun\documents\job-lister\normalizer.py", line 41, in normalize_all_jobs
+    normalized_jobs.extend(normalize_rise_jobs(rise_jobs))
+                           ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^
+  File "C:\Users\tarun\documents\job-lister\normalizer.py", line 8, in normalize_rise_jobs
+    "title": job.get('title'),
+             ^^^^^^^
+AttributeError: 'str' object has no attribute 'get'
+2026-03-08 18:57:00,041 - root - INFO - Sleeping for 36000.0 seconds...
+
+2026-03-08 18:57:51,858 - root - INFO - Successfully retrieved data
+2026-03-08 18:57:53,111 - root - INFO - Data Retrieved successfully
+2026-03-08 18:57:53,113 - root - ERROR - Unexpected crash: 'NoneType' object cannot be interpreted as an integer
+Traceback (most recent call last):
+  File "C:\Users\tarun\documents\job-lister\main.py", line 60, in main
+    normalized_jobs = normalize_all_jobs(rise_jobs, arbeit_jobs)
+  File "C:\Users\tarun\documents\job-lister\normalizer.py", line 42, in normalize_all_jobs
+    normalized_jobs.extend(normalize_arbeit_jobs(arbeit_jobs))
+                           ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "C:\Users\tarun\documents\job-lister\normalizer.py", line 31, in normalize_arbeit_jobs
+    "date" : datetime.utcfromtimestamp(job.get("createdAt")).date()
+             ~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^
+TypeError: 'NoneType' object cannot be interpreted as an integer
+2026-03-08 18:57:53,115 - root - INFO - Sleeping for 36000.0 seconds...
+
+2026-03-08 19:03:55,537 - root - INFO - Successfully retrieved data
+2026-03-08 19:03:56,890 - root - INFO - Data Retrieved successfully
+2026-03-08 19:03:56,911 - root - INFO - New job detected: Senior Amazon Advertising Manager (m/w/d) at Adsmasters GmbH
+2026-03-08 19:03:56,916 - root - INFO - Job added to database
+2026-03-08 19:04:02,576 - root - ERROR - Failed to send message on telegram. Retrying in 1.8023583053809298 seconds.
+2026-03-08 19:04:05,934 - root - ERROR - Failed to send message on telegram. Retrying in 3.548426641008616 seconds.
+2026-03-08 19:04:11,055 - root - ERROR - Failed to send message on telegram. Retrying in 4.914060923306016 seconds.
+2026-03-08 19:04:15,970 - root - ERROR - Failed to send message on telegram after 3 retries.
+2026-03-08 19:04:16,808 - root - ERROR - Failed to send message on slack. Retrying in 0.6432118145140371 seconds.
+2026-03-08 19:04:18,258 - root - ERROR - Failed to send message on slack. Retrying in 5.305427858801903 seconds.
+2026-03-08 19:04:24,436 - root - ERROR - Failed to send message on slack. Retrying in 10.101397169986466 seconds.
+2026-03-08 19:04:34,539 - root - ERROR - Failed to send message on slack after 3 retries.
+2026-03-08 19:04:35,389 - root - INFO - Successfully sent message on telegram.
+2026-03-08 19:04:35,391 - root - INFO - Job alerts sent successfully
+2026-03-08 19:04:35,396 - root - INFO - New job detected: Cloud Engineer at Paymentology
+2026-03-08 19:04:35,397 - root - INFO - Job added to database
+2026-03-08 19:04:36,829 - root - ERROR - Failed to send message on telegram. Retrying in 0.4136816204948923 seconds.
+2026-03-08 19:04:38,735 - root - ERROR - Failed to send message on telegram. Retrying in 2.968223892746452 seconds.
+2026-03-08 19:04:43,164 - root - ERROR - Failed to send message on telegram. Retrying in 12.36982177873832 seconds.
+2026-03-08 19:07:28,496 - root - INFO - Successfully retrieved data
+2026-03-08 19:07:29,899 - root - INFO - Data Retrieved successfully
+2026-03-08 19:07:29,905 - root - INFO - New job detected: Wertgutachter (m/w/d) at Ostfriesische Volksbank eG
+2026-03-08 19:07:29,908 - root - INFO - Job added to database
+2026-03-08 19:07:31,693 - root - ERROR - Failed to send message on telegram. Retrying in 0.479956089948975 seconds.
+2026-03-08 19:07:33,703 - root - ERROR - Failed to send message on telegram. Retrying in 3.6439208843891846 seconds.
+2026-03-08 19:07:38,895 - root - ERROR - Failed to send message on telegram. Retrying in 9.380404032265472 seconds.
+2026-03-08 19:07:48,277 - root - ERROR - Failed to send message on telegram after 3 retries.
+2026-03-08 19:07:49,135 - root - ERROR - Failed to send message on slack. Retrying in 1.1562456339478246 seconds.
+2026-03-08 19:07:52,017 - root - ERROR - Failed to send message on slack. Retrying in 7.780063742536813 seconds.
+2026-03-08 19:08:00,654 - root - ERROR - Failed to send message on slack. Retrying in 0.12118195107208152 seconds.
+2026-03-08 19:08:00,777 - root - ERROR - Failed to send message on slack after 3 retries.
+2026-03-08 19:08:01,775 - root - INFO - Successfully sent message on discord.
+2026-03-08 19:08:01,777 - root - INFO - Job alerts sent successfully
+2026-03-08 19:08:01,778 - root - INFO - New job detected: Serviceberater (m/w/d) at Ostfriesische Volksbank eG
+2026-03-08 19:08:01,779 - root - INFO - Job added to database
+2026-03-08 19:08:03,407 - root - ERROR - Failed to send message on telegram. Retrying in 3.247217127458468 seconds.
+2026-03-08 19:08:08,324 - root - ERROR - Failed to send message on telegram. Retrying in 3.329097690274045 seconds.
+2026-03-08 19:08:13,754 - root - ERROR - Failed to send message on telegram. Retrying in 15.71717384230593 seconds.
+2026-03-08 19:08:29,472 - root - ERROR - Failed to send message on telegram after 3 retries.
+2026-03-08 19:08:30,253 - root - ERROR - Failed to send message on slack. Retrying in 2.356499530264527 seconds.
+2026-03-08 19:08:33,280 - root - ERROR - Failed to send message on slack. Retrying in 7.712474357982034 seconds.
+2026-03-08 19:08:41,781 - root - ERROR - Failed to send message on slack. Retrying in 5.30930126983413 seconds.
+2026-03-08 19:08:47,092 - root - ERROR - Failed to send message on slack after 3 retries.
+2026-03-08 19:08:48,499 - root - INFO - Successfully sent message on discord.
+2026-03-08 19:08:48,501 - root - INFO - Job alerts sent successfully
+2026-03-08 19:08:48,501 - root - INFO - New job detected: Founders Associate - Praktikum / Werkstudent at PREDICT
+2026-03-08 19:08:48,503 - root - INFO - Job added to database
+2026-03-08 19:08:50,254 - root - ERROR - Failed to send message on telegram. Retrying in 2.98189723515829 seconds.
+2026-03-08 19:08:54,856 - root - ERROR - Failed to send message on telegram. Retrying in 3.8458678623500253 seconds.
+2026-03-08 19:09:00,813 - root - ERROR - Failed to send message on telegram. Retrying in 3.9315217294258087 seconds.
+2026-03-08 19:09:04,745 - root - ERROR - Failed to send message on telegram after 3 retries.
+2026-03-08 19:09:05,608 - root - ERROR - Failed to send message on slack. Retrying in 3.1644396434499353 seconds.
+2026-03-08 19:09:09,934 - root - ERROR - Failed to send message on slack. Retrying in 0.44578251007998215 seconds.
+2026-03-08 19:09:11,374 - root - ERROR - Failed to send message on slack. Retrying in 5.761413548009731 seconds.
+2026-03-08 19:09:17,136 - root - ERROR - Failed to send message on slack after 3 retries.
+2026-03-08 19:09:18,174 - root - INFO - Successfully sent message on discord.
+2026-03-08 19:09:18,176 - root - INFO - Job alerts sent successfully
+2026-03-08 19:09:18,178 - root - INFO - New job detected: Assistenz / Sachbearbeiterin Einkauf und Administration (Mensch*), Teilzeit 20 Std. Medizintechnik at BGS Beta-Gamma-Service GmbH & Co. KG
+2026-03-08 19:09:18,181 - root - INFO - Job added to database
+2026-03-08 19:09:22,093 - root - ERROR - Failed to send message on telegram. Retrying in 0.2120103737171748 seconds.
+2026-03-08 19:09:23,853 - root - ERROR - Failed to send message on telegram. Retrying in 0.6304920683367934 seconds.
+2026-03-08 19:09:26,366 - root - ERROR - Failed to send message on telegram. Retrying in 7.992361202698083 seconds.
+2026-03-08 19:09:34,359 - root - ERROR - Failed to send message on telegram after 3 retries.
+2026-03-08 19:09:35,402 - root - ERROR - Failed to send message on slack. Retrying in 0.6215289503278147 seconds.
+2026-03-08 19:09:36,812 - root - ERROR - Failed to send message on slack. Retrying in 0.3433261678709325 seconds.
+2026-03-08 19:09:37,910 - root - ERROR - Failed to send message on slack. Retrying in 11.53988166609481 seconds.
+2026-03-08 19:09:49,450 - root - ERROR - Failed to send message on slack after 3 retries.
+2026-03-08 19:09:50,415 - root - INFO - Successfully sent message on discord.
+2026-03-08 19:09:50,416 - root - INFO - Job alerts sent successfully
+2026-03-08 19:09:50,418 - root - INFO - New job detected: Scooters Mechanic at Bolt Technology
+2026-03-08 19:09:50,422 - root - INFO - Job added to database
+2026-03-08 19:09:52,047 - root - ERROR - Failed to send message on telegram. Retrying in 1.1909306332814498 seconds.
+2026-03-08 19:13:44,653 - root - INFO - Successfully retrieved data
+2026-03-08 19:13:46,302 - root - INFO - Data Retrieved successfully
+2026-03-08 19:13:46,311 - root - INFO - New job detected: Freelance Sales Manager B2B Bauprojekte - Homeoffice at JK Group
+2026-03-08 19:13:46,316 - root - INFO - Job added to database
+2026-03-08 19:13:47,468 - root - INFO - Successfully sent message on telegram.
+2026-03-08 19:13:48,246 - root - ERROR - Failed to send message on slack. Retrying in 2.0189836305724063 seconds.
+2026-03-08 19:13:51,055 - root - ERROR - Failed to send message on slack. Retrying in 4.627324287337456 seconds.
+2026-03-08 19:16:53,133 - root - INFO - Successfully retrieved data
+2026-03-08 19:16:54,408 - root - INFO - Data Retrieved successfully
+2026-03-08 19:16:54,416 - root - INFO - New job detected: Senior Marketing Manager - DACH at Earnix
+2026-03-08 19:16:54,418 - root - INFO - Job added to database
+2026-03-08 19:16:55,620 - root - INFO - Successfully sent message on telegram.
+2026-03-08 19:16:56,376 - root - INFO - Successfully sent message on slack.
+2026-03-08 19:16:57,190 - root - INFO - Successfully sent message on discord.
+2026-03-08 19:16:57,192 - root - INFO - Job alerts sent successfully
+2026-03-08 19:16:57,193 - root - INFO - New job detected: Senior Solutions Architect at Automat-it
+2026-03-08 19:16:57,194 - root - INFO - Job added to database
+2026-03-08 19:16:58,478 - root - INFO - Successfully sent message on telegram.
+2026-03-08 19:16:59,211 - root - INFO - Successfully sent message on slack.
+2026-03-08 19:17:00,032 - root - INFO - Successfully sent message on discord.
+2026-03-08 19:17:00,033 - root - INFO - Job alerts sent successfully
+2026-03-08 19:17:00,034 - root - INFO - New job detected: HR Manager (m/w/d) at Flora Food Group
+2026-03-08 19:17:00,037 - root - INFO - Job added to database
+2026-03-08 19:17:01,105 - root - INFO - Successfully sent message on telegram.
+2026-03-08 19:17:01,796 - root - INFO - Successfully sent message on slack.
+2026-03-08 19:17:02,642 - root - INFO - Successfully sent message on discord.
+2026-03-08 19:17:02,644 - root - INFO - Job alerts sent successfully
+2026-03-08 19:17:02,645 - root - INFO - New job detected: Verkaufstalent im Außendienst (m/w/d) at Nerlich & Lesser KG
+2026-03-08 19:17:02,648 - root - INFO - Job added to database
+2026-03-08 19:17:03,706 - root - INFO - Successfully sent message on telegram.
+2026-03-08 19:17:04,445 - root - INFO - Successfully sent message on slack.
+2026-03-08 19:17:05,564 - root - INFO - Successfully sent message on discord.
+2026-03-08 19:17:05,566 - root - INFO - Job alerts sent successfully
+2026-03-08 19:17:05,567 - root - INFO - New job detected: Environmental, Permitting & Planning Manager at GRENERGY RENOVABLES SA
+2026-03-08 19:17:05,571 - root - INFO - Job added to database
+2026-03-08 19:17:06,656 - root - INFO - Successfully sent message on telegram.
+2026-03-08 19:17:07,528 - root - INFO - Successfully sent message on slack.
+2026-03-08 19:17:08,446 - root - INFO - Successfully sent message on discord.
+2026-03-08 19:17:08,448 - root - INFO - Job alerts sent successfully
+2026-03-08 19:17:08,449 - root - INFO - New job detected: Innovationsberater:in Europäische Förderprojekte – Schwerpunkt Industrie- und Dekarbonisierungsvorhaben (m/w/d) at EurA AG
+2026-03-08 19:17:08,452 - root - INFO - Job added to database
+2026-03-08 19:17:09,772 - root - INFO - Successfully sent message on telegram.
+2026-03-08 19:17:10,567 - root - INFO - Successfully sent message on slack.
+2026-03-08 19:17:11,522 - root - INFO - Successfully sent message on discord.
+2026-03-08 19:17:11,524 - root - INFO - Job alerts sent successfully
+2026-03-08 19:17:11,526 - root - INFO - New job detected: Innovationsberater:in Europäische Förderprojekte – Schwerpunkt Start-ups (m/w/d) at EurA AG
+2026-03-08 19:17:11,527 - root - INFO - Job added to database
+2026-03-08 19:17:12,667 - root - INFO - Successfully sent message on telegram.
+2026-03-08 19:17:13,619 - root - INFO - Successfully sent message on slack.
