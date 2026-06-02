@@ -1,5 +1,5 @@
 from .utility import send_with_retry
-from config import SLACK_URL
+from services.config_service import SLACK_URL
 
 def slack_notify(message):
 

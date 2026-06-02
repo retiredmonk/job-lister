@@ -1,5 +1,5 @@
 from .utility import send_with_retry
-from config import DISCORD_URL
+from services.config_service import DISCORD_URL
 
 def discord_notify(message):
 

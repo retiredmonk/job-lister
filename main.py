@@ -1,7 +1,7 @@
-from config import *
+from services.config_service import *
 import logging
-from errors import *
-from normalizer import *
+from services.errors_service import *
+from services.normalizer_service import *
 from api_clients.rise import fetch_rise
 from api_clients.arbeit_now import fetch_arbeit_now
 from database.db import init_db, add_details, get_connection, is_db_empty
@@ -49,7 +49,7 @@ def build_message(job):
 def run_pipeline(conn):
 
     db_empty = is_db_empty(conn)
-    
+
     rise_jobs = fetch_rise()
     arbeit_jobs = fetch_arbeit_now()
 

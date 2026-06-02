@@ -1,5 +1,5 @@
 import requests, logging, random, time
-from config import EXPONENTIAL_BASE, EXPONENTIAL_MAX_RETRIES, TIMEOUT
+from services.config_service import EXPONENTIAL_BASE, EXPONENTIAL_MAX_RETRIES, TIMEOUT
 
 def send_with_retry(url, payload, json_mode=False):
 

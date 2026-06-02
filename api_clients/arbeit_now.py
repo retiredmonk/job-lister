@@ -1,6 +1,6 @@
 import logging, random, time, requests
-from config import *
-from errors import *
+from services.config_service import *
+from services.errors_service import *
 
 def fetch_arbeit_now():
     headers = ARBEIT_NOW_HEADERS

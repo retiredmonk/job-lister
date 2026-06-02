@@ -35,7 +35,7 @@ DB_PORT = int(os.getenv("DB_PORT"))
 
 # LOGGING
 
-LOG_DIR = Path('logs')
+LOG_DIR = Path('../logs')
 LOG_DIR.mkdir(exist_ok=True)
 LOG_FILE = LOG_DIR/"job_lister.log"
 

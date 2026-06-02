@@ -1,5 +1,5 @@
 from .utility import send_with_retry
-from config import TELEGRAM_URL, TELEGRAM_CHAT_ID
+from services.config_service import TELEGRAM_URL, TELEGRAM_CHAT_ID
 
 def telegram_notify(message):
 

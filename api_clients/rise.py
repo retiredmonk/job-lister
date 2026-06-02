@@ -1,6 +1,6 @@
 import requests, logging, random, time
-from config import *
-from errors import *
+from services.config_service import *
+from services.errors_service import *
 
 def fetch_rise():
     headers = RISE_HEADERS
