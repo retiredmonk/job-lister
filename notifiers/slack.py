@@ -1,10 +1,14 @@
-from .utility import send_with_retry
-from services.config_service import SLACK_URL
+from env import get_settings
+from services.notifier import send_with_retry
+
+config = get_settings()
 
 def slack_notify(message):
+
+    url = config.SLACK_URL
 
     payload = {
         "text": message
     }
 
-    send_with_retry(SLACK_URL, payload, json_mode=True)
+    return send_with_retry(url, payload, json_mode=True)

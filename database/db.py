@@ -1,19 +1,21 @@
 import psycopg2
-from services.config_service import *
+from env import get_settings
 
+config = get_settings()
 
 def get_connection():
     return psycopg2.connect(
-        host=DB_HOST,
-        port=DB_PORT,
-        user=DB_USER,
-        password=DB_PASSWORD,
-        database=DB_NAME,
+        host=config.DB_HOST,
+        port=config.DB_PORT,
+        user=config.DB_USER,
+        password=config.DB_PASSWORD,
+        database=config.DB_NAME,
         connect_timeout=10
     )
 
-def init_db(connection):
+def init_db():
 
+    connection = get_connection()
     cursor = connection.cursor()
 
     cursor.execute("""
@@ -30,13 +32,12 @@ def init_db(connection):
     """)
 
     connection.commit()
-    cursor.close()
+    connection.close()
 
 
-def add_details(connection, job):
+def add_details(connection,job):
 
     cursor = connection.cursor()
-
     cursor.execute(
         """
         INSERT INTO job_list (title, company, location, url, source)
@@ -55,17 +56,13 @@ def add_details(connection, job):
 
     result = cursor.fetchone()
 
-    cursor.close()
-
     return result is not None
 
 def is_db_empty(connection):
+
     cursor = connection.cursor()
-
     cursor.execute("SELECT COUNT(*) FROM job_list")
-
     count = cursor.fetchone()[0]
 
-    cursor.close()
-
     return count == 0
+

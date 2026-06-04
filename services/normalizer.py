@@ -1,25 +1,27 @@
-from datetime import datetime
+from datetime import datetime,timezone
 
 def normalize_rise_jobs(rise_jobs):
+    normalized_jobs = []
 
-    normalized_jobs=[]
     for job in rise_jobs:
         normalized_job = {
             "title": job.get('title'),
             "company": job.get("owner", {}).get("companyName"),
             "location": job.get('locationAddress'),
-            "job_type" : job.get('workModel'),
-            "url" : str(job.get('url')),
-            "source" : 'Rise',
-            "date" : datetime.fromisoformat(job.get("createdAt").replace("Z", "+00:00")).date()
+            "job_type": job.get('workModel'),
+            "url": str(job.get('url')),
+            "source": 'Rise',
+            "date": datetime.fromisoformat(
+                job.get("createdAt").replace("Z", "+00:00")
+            ).date()
         }
         normalized_jobs.append(normalized_job)
 
     return normalized_jobs
 
 def normalize_arbeit_jobs(arbeit_jobs):
-
     normalized_jobs=[]
+
     for job in arbeit_jobs:
         normalized_job = {
             "title": job.get('title'),
@@ -28,7 +30,7 @@ def normalize_arbeit_jobs(arbeit_jobs):
             "job_type" : str(job.get("remote")),
             "url" : str(job.get("url")),
             "source" : 'Arbeit Now',
-            "date" : datetime.utcfromtimestamp(job.get("created_at")).date()
+            "date" : datetime.fromtimestamp(job.get("created_at"), tz=timezone.utc).date()
         }
         normalized_jobs.append(normalized_job)
 

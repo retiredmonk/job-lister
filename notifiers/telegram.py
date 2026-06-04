@@ -1,11 +1,15 @@
-from .utility import send_with_retry
-from services.config_service import TELEGRAM_URL, TELEGRAM_CHAT_ID
+from env import get_settings
+from services.notifier import send_with_retry
+
+config = get_settings()
 
 def telegram_notify(message):
 
+    url = f'https://api.telegram.org/bot{config.TELEGRAM_TOKEN}/sendMessage'
+
     payload = {
-        "chat_id": TELEGRAM_CHAT_ID,
+        "chat_id": config.TELEGRAM_CHAT_ID,
         "text": message
     }
 
-    send_with_retry(TELEGRAM_URL, payload)
+    return send_with_retry(url, payload)
