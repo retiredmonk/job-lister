@@ -26,7 +26,7 @@ def main():
 
             logging.info(f"Sleeping for {poll_interval} seconds...\n")
             time.sleep(poll_interval)
-            
+
     except KeyboardInterrupt:
         logging.info("User triggered shutdown. Shutting down...")
 

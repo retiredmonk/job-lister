@@ -24,5 +24,5 @@ def setup_logging():
     logger.addHandler(file_handler)
     logger.addHandler(stream_handler)
 
-def get_logger(name=__name__):
+def get_logger(name="Job-Lister"):
     return logging.getLogger(name)
