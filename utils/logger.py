@@ -3,8 +3,6 @@ from pathlib import Path
 
 LOG_FILE = Path("logs/job_lister.log")
 
-
-
 def setup_logging():
 
     LOG_FILE.parent.mkdir(parents=True, exist_ok=True)

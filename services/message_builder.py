@@ -1,17 +1,4 @@
-def build_message(job):
-    return f"""
-    🚨 Job Alert ({job['source']})
-
-    Title: {job['title']}
-    Company: {job['company']}
-    Location: {job['location']}
-    Type: {job['job_type']}
-    Date: {job['date']}
-
-    Apply: {job['url']}
-    """
-
-def build_combined_message(jobs):
+def build_message(jobs):
     jobs = jobs[:10]
     message = f"🚨 {len(jobs)} New Job(s) Found\n\n"
 

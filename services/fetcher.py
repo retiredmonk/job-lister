@@ -10,7 +10,6 @@ def fetch_with_retry(url, headers):
 
     base = 2
     max_retries = 3
-
     saw_rate_limit = False
     saw_network_error = False
     saw_server_error = False

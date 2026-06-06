@@ -1,7 +1,4 @@
-from utils.logger import get_logger
 from services.fetcher import fetch_with_retry
-
-logger = get_logger()
 
 def fetch_arbeit_now():
     headers = {
