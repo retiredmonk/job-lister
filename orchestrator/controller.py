@@ -48,3 +48,5 @@ def run_pipeline():
                 logger.warning(f"Partial failure. Failed platforms: {failed_platforms}")
             else:
                 logger.info("All notifications sent successfully.")
+        else:
+            logger.info(f"No new jobs found. ({len(normalized_jobs)} already tracked)")
