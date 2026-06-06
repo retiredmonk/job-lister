@@ -5,7 +5,7 @@ config = get_settings()
 
 def discord_notify(message):
 
-    url = f"https://discord.com/api/webhooks/{config.DISCORD_ID}/{config.DISCORD_TOKEN}"
+    url = config.DISCORD_WEBHOOK_URL
 
     payload = {
         "content": message

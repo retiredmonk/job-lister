@@ -9,8 +9,7 @@ class Settings(BaseSettings):
     DB_USER: str
     DB_PASSWORD: str
 
-    DISCORD_ID: str
-    DISCORD_TOKEN: str
+    DISCORD_WEBHOOK_URL: str
 
     TELEGRAM_TOKEN: str
     TELEGRAM_CHAT_ID: str
